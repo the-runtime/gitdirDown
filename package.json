@@ -1,0 +1,36 @@
+{
+  "name": "typegitdl",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel watch src/background.ts --dist-dir dist",
+    "build": "parcel build src/manifest.json --dist-dir dist/"
+  },
+  "parcel": {
+    "entries": {
+      "background": "src/background.ts",
+      "gitTypes": "src/gitTypes.ts"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-typescript": "^7.22.5",
+    "@types/chrome": "^0.0.241",
+    "@types/node": "^20.4.2",
+    "buffer": "^6.0.3",
+    "parcel": "^2.9.3",
+    "parcel-resolver-ignore": "^2.1.5",
+    "process": "^0.11.10",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@parcel/config-webextension": "^2.9.3",
+    "@types/jszip": "^3.4.1",
+    "json-ts": "^1.6.4",
+    "jszip": "^3.10.1"
+  }
+}

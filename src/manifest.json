@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "gitdirDown",
+  "version": "0.0.1",
+  "description": "Download github repo folder",
+  "icons": {
+    "48": "icons/gitdirDown.png"
+  },
+  "permissions": [
+    "contextMenus",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.ts",
+    "type": "module"
+  },
+  "action": {
+    "default_popup" : "popup/popup.html",
+    "default_icon": {
+      "48": "icons/gitdirDown.png"
+    },
+    "browser_style": true,
+    "default_title": "DownDrive"
+
+  }
+
+}

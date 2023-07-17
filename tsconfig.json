@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "ES2015",
+    "outDir": "dist",
+    "strict": true,
+    "moduleResolution": "node",
+    "lib": [
+      "ES2022",
+      "Dom",
+      "DOM.Iterable"
+    ],
+    "types": [
+      "chrome",
+      "jszip"
+    ]
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
