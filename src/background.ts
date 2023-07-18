@@ -39,7 +39,7 @@ async function processGit(downFile: DownTypes,data: GitTypes[], folderName: stri
 chrome.runtime.onInstalled.addListener(() => {
     chrome.contextMenus.create({
         id: "gitdl_id",
-        title: "Download folder",
+        title: "gitdirDown - Download Github folder",
         enabled: true,
         contexts:["link"]
     })

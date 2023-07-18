@@ -18,6 +18,7 @@ function recieveMessage(message, sender, sendResponse)  {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    console.log("page loaded")
     chrome.runtime.onMessage.addListener(recieveMessage)
 
 });
