@@ -8,7 +8,14 @@ chrome.runtime.onStartup.addListener(() => {
         contexts:["link"]
     })
 })
-
+chrome.runtime.onInstalled.addListener(() => {
+    chrome.contextMenus.create( {
+        id: "gitdl_id",
+        title: "gitdirDown - Download Github folder",
+        enabled: true,
+        contexts:["link"]
+    })
+})
 chrome.contextMenus.onClicked.addListener((info: OnClickData) => {
     if (info.pageUrl.slice(0, 18) == "https://github.com") {
         if (info.linkUrl == undefined) {
@@ -20,7 +27,11 @@ chrome.contextMenus.onClicked.addListener((info: OnClickData) => {
                 console.log("Problem creating new tab with download page")
                 return
             }
-            chrome.tabs.sendMessage(tab.id,info.linkUrl)
+            setTimeout( function () {
+                console.log("after 2 secs")
+                chrome.tabs.sendMessage(tab.id ?? 0 ,info.linkUrl)
+            }, 500)
+
         })
     }
 })

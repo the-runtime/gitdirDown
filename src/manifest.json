@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "gitdirDown",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Download github repo folder",
   "icons": {
     "48": "icons/gitdirDown.png"
@@ -16,7 +16,7 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "gitdirdowntheruntime7@gmail.com",
+      "id": "gitdirtheruntime7@gmail.com",
       "strict_min_version": "109.0"
     }
   },
