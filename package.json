@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "parcel watch src/background.ts --dist-dir dist",
+    "start": "parcel watch src/old_background.ts --dist-dir dist",
     "build": "parcel build src/manifest.json --dist-dir dist/"
   },
   "parcel": {

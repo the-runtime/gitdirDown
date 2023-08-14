@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "gitdirDown",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Download github repo folder",
   "icons": {
     "48": "icons/gitdirDown.png"
@@ -16,18 +16,28 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "gitdirdown@theruntime7@gmail.com",
+      "id": "gitdirdowntheruntime7@gmail.com",
       "strict_min_version": "109.0"
     }
   },
   "action": {
-    "default_popup" : "popup/popup.html",
+    "default_popup": "popup/popup.html",
     "default_icon": {
       "48": "icons/gitdirDown.png"
     },
     "browser_style": true,
-    "default_title": "DownDrive"
-
-  }
+    "default_title": "gitdirDown"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content/*",
+        "content/download.html"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+    ]
 
 }
